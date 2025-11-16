@@ -28,7 +28,7 @@ const LatestIssues = async () => {
                   {issue.assignedToUser && (
                     <Avatar
                       src={issue.assignedToUser.image!}
-                      fallback='?'
+                      fallback={issue.assignedToUser.name![0]}
                       size='2'
                       radius='full'
                     />
