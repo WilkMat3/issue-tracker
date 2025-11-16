@@ -73,7 +73,7 @@ const AuthStatus = () => {
         <DropdownMenu.Trigger>
           <Avatar
             src={session!.user!.image!}
-            fallback={"?"}
+            fallback={session!.user!.name![0]}
             size='2'
             radius='full'
             className='cursor-pointer'
